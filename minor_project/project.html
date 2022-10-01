@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script> 
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minor Project</title>
+</head>
+
+<body onload="fetch()">
+    <div class="container">
+        <div class="first">
+            <h1 style="margin-top: -2px;">BHU FORECAST</h1>
+        </div>
+        <div class="second">
+            <div class="se-a">
+                <div class="se-a-a">
+                    <h2 style="margin-left: 30px;">Sensor data</h2>
+                    <h2
+                        style="background-color: red; border-radius: 10px; padding-left: 12px; padding-right: 12px; margin-bottom: 100px; margin-left: 10px; color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                        LIVE</h2>
+                </div>
+                <div class="se-a-b">
+                    <div class="se-a-b_a">
+                        <h2 style="color: #565759;">Last recorded Temperature</h2>
+                    </div>
+                    <div class="se-a-b_b">
+                        <h2 class="temp" id="last_rec">---- °C</h2>
+                    </div>
+                    <div class="se-a-b_c">
+                        <h2 id="last_rec_date" style="padding-left: 10px; padding-top: 25px; color: #565759;">
+                            Date: ----------</h2>
+                        <h2 id="last_rec_time" style="padding-left: 10px; margin-top: -20px; color: #565759;">
+                            Time: -------</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="se-b">
+                <h2 class="temp"
+                    style="width: 200px; padding-bottom: 13px; margin-top: 40px; font-size: 22px; color: #565759;">
+                    Forecasting</h2>
+                <hr>
+            </div>
+            <div class="se-c">
+                <h2 id="for_the_date">For the date: -----------</h2>
+            </div>
+        </div>
+        <div class="third">
+            <div class="th-a">
+                <div class="th-a-a">
+                    <h2 class="label" style="padding-right: 12px;">Morning temperature: </h2>
+                    <h2 id="morning" class="temp">---- °C</h2>
+                </div>
+                <div class="th-a-b">
+                    <h2 class="label" style="padding-right: 12px;">Afternoon Temperature: </h2>
+                    <h2 id="afternoon" class="temp" style="margin-right: 20px;">---- °C</h2>
+                </div>
+                <div class="th-a-c">
+                    <h2 class="label" style="padding-right: 12px;">Evening Temperature: </h2>
+                    <h2 id="evening" class="temp">---- °C</h2>
+                </div>
+            </div>
+            <div class="th-b">
+                <div class="th-b-l">
+                    <h2 class="label">Max Temperature</h2>
+                    <h2 id="max" class="temp">---- °C</h2>
+                </div>
+                <div class="th-b-r">
+                    <h2 class="label">Min Temperature</h2>
+                    <h2 id="min" class="temp">---- °C</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
